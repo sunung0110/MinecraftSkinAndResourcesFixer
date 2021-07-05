@@ -2,6 +2,8 @@
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
 
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
+
 ---
 
 MinecraftSkinFixer is a simple program which allows old versions of Minecraft to download Skins from the new Skin servers.
@@ -16,6 +18,8 @@ This version is a modified version for my personal use, and the existing code wo
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
 
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
+
 ---
 
 이 버전은 이미 이전의 EULA 위반이 "제거된" 버전입니다. 마인크래프트 팬덤 위키 개새끼들아.
@@ -29,14 +33,20 @@ The version that can apply skin with this is from alpha 1.1.2_01 version. Not 1.
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
 
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
+
 ---
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
+
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
 
 ~~The [Minecraft Forum Thread](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-tools/2923190-minecraftskinfixer-skins-in-old-minecraft-versions) contains more information.~~  
 *The Minecraft Forum Thread dissappeared around December 2018/January 2019, together with my Minecraft Forum Account.*
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
+
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
 
 **NOTE: Versions 2.2 and 2.3 were removed.**  
 
@@ -50,6 +60,8 @@ The version that can apply skin with this is from alpha 1.1.2_01 version. Not 1.
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
 
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
+
 ### Supported Minecraft Versions
 
 All Minecraft versions since the introduction of custom skins up to release 1.5.2 are supported.  
@@ -58,6 +70,8 @@ However, if you are using a version between release 1.0 and release 1.2.5, you n
 ---
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
+
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
 
 ### Usage instructions:
 1. Download the MinecraftSkinFixer .jar file from the releases tab
@@ -69,6 +83,8 @@ However, if you are using a version between release 1.0 and release 1.2.5, you n
 ---
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
+
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
 
 The main program has two dependencies:
 * [Non-standard JRE HTTP server](https://docs.oracle.com/javase/8/docs/jre/api/net/httpserver/spec/index.html) (included in most JREs)
