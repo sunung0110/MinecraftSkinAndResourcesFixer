@@ -92,6 +92,7 @@ public class SkinFixer {
 		
 		if(uuid.equals("3f92defab3ec4d0389d6a0abd4a6ed01")){
 			logger.log("GET OUT MOTHERFUCKER!!!!!!!!!");
+			return new byte[0];
 		}
 		else{
 			logger.log("[Skin Fixer] " + connectionId + "UUID of player " + username + " is " + uuid);
