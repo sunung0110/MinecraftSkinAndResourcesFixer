@@ -2,7 +2,7 @@
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
 
-****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program FOREVER.****
 
 ---
 
@@ -18,7 +18,7 @@ This version is a modified version for my personal use, and the existing code wo
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
 
-****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program FOREVER.****
 
 ---
 
@@ -33,20 +33,20 @@ The version that can apply skin with this is from alpha 1.1.2_01 version. Not 1.
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
 
-****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program FOREVER.****
 
 ---
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
 
-****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program FOREVER.****
 
 ~~The [Minecraft Forum Thread](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-tools/2923190-minecraftskinfixer-skins-in-old-minecraft-versions) contains more information.~~  
 *The Minecraft Forum Thread dissappeared around December 2018/January 2019, together with my Minecraft Forum Account.*
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
 
-****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program FOREVER.****
 
 **NOTE: Versions 2.2 and 2.3 were removed.**  
 
@@ -60,7 +60,7 @@ The version that can apply skin with this is from alpha 1.1.2_01 version. Not 1.
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
 
-****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program FOREVER.****
 
 ### Supported Minecraft Versions
 
@@ -71,7 +71,7 @@ However, if you are using a version between release 1.0 and release 1.2.5, you n
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
 
-****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program FOREVER.****
 
 ### Usage instructions:
 1. Download the MinecraftSkinFixer .jar file from the releases tab
@@ -84,7 +84,7 @@ However, if you are using a version between release 1.0 and release 1.2.5, you n
 
 ****In version 2.4, EULA violations have already been completely removed. Minecraft fandom wiki Fxxkers.****
 
-****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program forever.****
+****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program FOREVER.****
 
 The main program has two dependencies:
 * [Non-standard JRE HTTP server](https://docs.oracle.com/javase/8/docs/jre/api/net/httpserver/spec/index.html) (included in most JREs)
