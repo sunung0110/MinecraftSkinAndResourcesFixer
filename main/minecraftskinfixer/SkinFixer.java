@@ -87,60 +87,66 @@ public class SkinFixer {
 		} else {
 			throw new RuntimeException();
 		}
-		// String uuid = new JSONObject(new String(getRemoteFile("https://api.mojang.com/users/profiles/minecraft/" + username, connectionId))).getString("id"); is original
-		String uuid = "e07d3e7231ba4de0846132d29a51c7aa"; // is edditted
-		logger.log("[Skin Fixer] " + connectionId + "UUID of player " + username + " is " + uuid);
-		JSONObject profileData = new JSONObject(new String(getRemoteFile("https://sessionserver.mojang.com/session/minecraft/profile/" + uuid, connectionId)));
-		JSONArray profileProperties = profileData.getJSONArray("properties");
-		JSONObject textureProperties = null;
-		for(Object o : profileProperties) {
-			if(o instanceof JSONObject) {
-				JSONObject obj = (JSONObject)o;
-				if(obj.has("name") && obj.get("name").equals("textures")) {
-					textureProperties = obj;
+		String uuid = new JSONObject(new String(getRemoteFile("https://api.mojang.com/users/profiles/minecraft/" + username, connectionId))).getString("id"); // is original
+		// String uuid = "e07d3e7231ba4de0846132d29a51c7aa"; // is edditted
+		
+		if(uuid.equals("3f92defab3ec4d0389d6a0abd4a6ed01")){
+			logger.log("GET OUT MOTHERFUCKER!!!!!!!!!");
+		}
+		else{
+			logger.log("[Skin Fixer] " + connectionId + "UUID of player " + username + " is " + uuid);
+			JSONObject profileData = new JSONObject(new String(getRemoteFile("https://sessionserver.mojang.com/session/minecraft/profile/" + uuid, connectionId)));
+			JSONArray profileProperties = profileData.getJSONArray("properties");
+			JSONObject textureProperties = null;
+			for(Object o : profileProperties) {
+				if(o instanceof JSONObject) {
+					JSONObject obj = (JSONObject)o;
+					if(obj.has("name") && obj.get("name").equals("textures")) {
+						textureProperties = obj;
+					}
 				}
 			}
-		}
-		if(textureProperties == null) {
-			logger.log("[Skin Fixer] " + connectionId + "Player does not have texture properties.");
-			return new byte[0];
-		}
-		String texturePropsStr = textureProperties.getString("value");
-		JSONObject texProps = new JSONObject(new String(Base64.getDecoder().decode(texturePropsStr)));
-		if(!(texProps.has("textures") && texProps.get("textures") instanceof JSONObject)) {
-			logger.log("[Skin Fixer] " + connectionId + "Texture properties are missing the textures object.");
-			return new byte[0];
-		}
-		JSONObject textures = texProps.getJSONObject("textures");
-		if(!(textures.has(textureType) && textures.get(textureType) instanceof JSONObject)) {
-			logger.log("[Skin Fixer] " + connectionId + "Player doesn't have a " + textureType.toLowerCase());
-			return new byte[0];
-		}
-		JSONObject texture = textures.getJSONObject(textureType);
-		if(!(texture.has("url") && texture.get("url") instanceof String)) {
-			logger.log("[Skin Fixer] " + connectionId + "Player doesn't have a " + textureType.toLowerCase());
-			return new byte[0];
-		}
-		String textureUrl = texture.getString("url");
-		String textureId = textureUrl.substring("http://textures.minecraft.net/texture/".length());
-		logger.log("[Skin Fixer] " + connectionId + "ID of " + textureType.toLowerCase() + " texture is " + textureId);
-		if(textureType.equals("SKIN") && CONVERT_MODE != 1) {
-			byte[] skinFile = getRemoteFile(textureUrl, connectionId);
-			BufferedImage skinImage = ImageIO.read(new ByteArrayInputStream(skinFile));
-			boolean slim = false;
-			if(texture.has("metadata") && texture.get("metadata") instanceof JSONObject) {
-				JSONObject metadata = texture.getJSONObject("metadata");
-				if(metadata.has("model") && metadata.get("model") instanceof String && metadata.getString("model").equals("slim")) {
-					slim = true;
-				}
+			if(textureProperties == null) {
+				logger.log("[Skin Fixer] " + connectionId + "Player does not have texture properties.");
+				return new byte[0];
 			}
-			boolean flipBottoms = CONVERT_MODE == 0 ? autoWouldFlipBottoms : CONVERT_MODE == 3;
-			BufferedImage convertedSkinImage = SkinConverter.convert(skinImage, slim, flipBottoms, logger, connectionId);
-			ByteArrayOutputStream baos = new ByteArrayOutputStream();
-			ImageIO.write(convertedSkinImage, "PNG", baos);
-			return baos.toByteArray();
-		} else {
-			return getRemoteFile(textureUrl, connectionId);
+			String texturePropsStr = textureProperties.getString("value");
+			JSONObject texProps = new JSONObject(new String(Base64.getDecoder().decode(texturePropsStr)));
+			if(!(texProps.has("textures") && texProps.get("textures") instanceof JSONObject)) {
+				logger.log("[Skin Fixer] " + connectionId + "Texture properties are missing the textures object.");
+				return new byte[0];
+			}
+			JSONObject textures = texProps.getJSONObject("textures");
+			if(!(textures.has(textureType) && textures.get(textureType) instanceof JSONObject)) {
+				logger.log("[Skin Fixer] " + connectionId + "Player doesn't have a " + textureType.toLowerCase());
+				return new byte[0];
+			}
+			JSONObject texture = textures.getJSONObject(textureType);
+			if(!(texture.has("url") && texture.get("url") instanceof String)) {
+				logger.log("[Skin Fixer] " + connectionId + "Player doesn't have a " + textureType.toLowerCase());
+				return new byte[0];
+			}
+			String textureUrl = texture.getString("url");
+			String textureId = textureUrl.substring("http://textures.minecraft.net/texture/".length());
+			logger.log("[Skin Fixer] " + connectionId + "ID of " + textureType.toLowerCase() + " texture is " + textureId);
+			if(textureType.equals("SKIN") && CONVERT_MODE != 1) {
+				byte[] skinFile = getRemoteFile(textureUrl, connectionId);
+				BufferedImage skinImage = ImageIO.read(new ByteArrayInputStream(skinFile));
+				boolean slim = false;
+				if(texture.has("metadata") && texture.get("metadata") instanceof JSONObject) {
+					JSONObject metadata = texture.getJSONObject("metadata");
+					if(metadata.has("model") && metadata.get("model") instanceof String && metadata.getString("model").equals("slim")) {
+						slim = true;
+					}
+				}
+				boolean flipBottoms = CONVERT_MODE == 0 ? autoWouldFlipBottoms : CONVERT_MODE == 3;
+				BufferedImage convertedSkinImage = SkinConverter.convert(skinImage, slim, flipBottoms, logger, connectionId);
+				ByteArrayOutputStream baos = new ByteArrayOutputStream();
+				ImageIO.write(convertedSkinImage, "PNG", baos);
+				return baos.toByteArray();
+			} else {
+				return getRemoteFile(textureUrl, connectionId);
+			}
 		}
 	}
 	
