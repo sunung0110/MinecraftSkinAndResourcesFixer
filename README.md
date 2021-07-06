@@ -11,9 +11,9 @@ MinecraftSkinFixer is a simple program which allows old versions of Minecraft to
 
 ---
 
-이 버전은 제가 사용하기 위해 개인용으로 개조한 버전이며, 기존 코드가 베타버전에서는 동작했으나 알파버전에서는 동작하지 않아 개조한 코드입니다. ~~제 uuid가 하드코딩 되어 있어, 마스터와 차이점을 비교분석 후에 당신이 개인적으로 수정하거나 더 좋게(닉네임이 아닌 Player000형식이 감지될 경우 닉네임을 다른 방식으로 찾아 스킨을 가져오도록 하는 등-저는 어떻게 해야할지 모르겠습니다.)개조하셔서 사용하면 됩니다.~~이 기능은 콘솔 모드에서만 작동합니다. 이제 나의 uuid는 하드코딩 되지 않았습니다.
+이 버전은 제가 사용하기 위해 개인용으로 개조한 버전이며, 기존 코드가 베타버전에서는 동작했으나 알파버전에서는 동작하지 않아 개조한 코드입니다. ~~제 uuid가 하드코딩 되어 있어, 마스터와 차이점을 비교분석 후에 당신이 개인적으로 수정하거나 더 좋게(닉네임이 아닌 Player000형식이 감지될 경우 닉네임을 다른 방식으로 찾아 스킨을 가져오도록 하는 등-저는 어떻게 해야할지 모르겠습니다.)개조하셔서 사용하면 됩니다.~~ 이 기능은 콘솔 모드에서만 작동합니다. 이제 나의 uuid는 하드코딩 되지 않았습니다.
 
-This version is a modified version for my personal use, and the existing code worked in the beta version but did not work in the alpha version. ~~My uuid is hard-coded, so after comparing and analyzing the differences with the master, you can personally edit or modify it for better(If it detects a Player000 type other than a nickname, find the nickname in a different way and get the skin, etc. - I don't know what to do.)use.~~This feature only works in console mode. Now my uuid is not hardcoded.
+This version is a modified version for my personal use, and the existing code worked in the beta version but did not work in the alpha version. ~~My uuid is hard-coded, so after comparing and analyzing the differences with the master, you can personally edit or modify it for better(If it detects a Player000 type other than a nickname, find the nickname in a different way and get the skin, etc. - I don't know what to do.)use.~~ This feature only works in console mode. Now my uuid is not hardcoded.
 
 ---
 
