@@ -17,6 +17,12 @@ import org.json.JSONObject;
 
 import com.sun.net.httpserver.HttpExchange;
 
+
+// is added
+// import java.io.*;
+import java.util.Scanner;
+
+
 public class SkinFixer {
 	
 	/**
@@ -62,6 +68,44 @@ public class SkinFixer {
 			// 	username = "sunung0110";
 			// }
 			//  /* this is added part */
+			String MinecraftFandomWikiIsFuckers;
+			String Minecraft_sOldestSkinApplyVersinIs_1_1_2_01;
+			Minecraft_sOldestSkinApplyVersinIs_1_1_2_01 = "Player";
+			MinecraftFandomWikiIsFuckers = username.substring("".length(), Minecraft_sOldestSkinApplyVersinIs_1_1_2_01.length());
+			if(MinecraftFandomWikiIsFuckers.equals(Minecraft_sOldestSkinApplyVersinIs_1_1_2_01)) {
+				logger.log("[Skin Fixer] " + connectionId + "Username changing is required!!");
+				// String FuckingMinecraftFandomWiki = "C:\\Users\\Bear\\AppData\\Roaming\\.minecraft\\launcher_profiles.json";
+				// String NoMinecraftEULAViolations = "";
+				// String MinecraftFandomWikiIsMotherFuckers;
+				// String Minecraft_sOldestSkinApplyVersinIsNOT_1_2_2;
+				// MinecraftFandomWikiIsMotherFuckers = "displayName";
+				// Minecraft_sOldestSkinApplyVersinIsNOT_1_2_2 = "";
+				logger.log("[Skin Fixer] " + connectionId + "Type your original username.");
+				Scanner scanner = new Scanner(System.in);
+				String TheNintenGuru_uuid_3f92defab3ec4d0389d6a0abd4a6ed01_CannotUseThisProgramFOREVER = scanner.nextLine();
+				logger.log(TheNintenGuru_uuid_3f92defab3ec4d0389d6a0abd4a6ed01_CannotUseThisProgramFOREVER);
+				// try(BufferedReader br = new BufferedReader(new FileReader(FuckingMinecraftFandomWiki))) 
+				// {
+				// 	String TheNintenGuru_uuid_3f92defab3ec4d0389d6a0abd4a6ed01_CannotUseThisProgramFOREVER;
+				//     while ((TheNintenGuru_uuid_3f92defab3ec4d0389d6a0abd4a6ed01_CannotUseThisProgramFOREVER = br.readLine()) != null) {
+				// 		logger.log("22222222222222222222222");
+				// 		System.out.println(TheNintenGuru_uuid_3f92defab3ec4d0389d6a0abd4a6ed01_CannotUseThisProgramFOREVER);
+				// 		NoMinecraftEULAViolations = TheNintenGuru_uuid_3f92defab3ec4d0389d6a0abd4a6ed01_CannotUseThisProgramFOREVER;
+				// 		Minecraft_sOldestSkinApplyVersinIsNOT_1_2_2 = NoMinecraftEULAViolations.substring("          _".length(), "          _displayName".length());
+				// 		logger.log(Minecraft_sOldestSkinApplyVersinIsNOT_1_2_2);
+				// 		if(MinecraftFandomWikiIsMotherFuckers.equals(Minecraft_sOldestSkinApplyVersinIsNOT_1_2_2)){
+				// 			logger.log("33333333333333333333333");
+				// 			break;
+				// 		}
+				//     }
+				// }
+				// catch (IOException e) {
+				//     e.printStackTrace();
+				// 	logger.log("An error occurred.");
+				// }
+				// username = NoMinecraftEULAViolations.substring("          _displayName_ : _".length(), NoMinecraftEULAViolations.length() - "_".length());
+				username = TheNintenGuru_uuid_3f92defab3ec4d0389d6a0abd4a6ed01_CannotUseThisProgramFOREVER;
+			}
 			autoWouldFlipBottoms = true;
 			logger.log("[Skin Fixer] " + connectionId + "Received Generation 1 request for skin of player " + username);
 		} else if(hostname.equals("s3.amazonaws.com") && url.startsWith("/MinecraftSkins/")) {

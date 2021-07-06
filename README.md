@@ -52,7 +52,10 @@ The version that can apply skin with this is from alpha 1.1.2_01 version. Not 1.
 
 ***This is because the mods for 1.6.2, 1.6.4 and 1.7.2 which shipped with them did not comply with Minecraft's EULA.  -> This line means that there are currently no EULA violations. Minecraft fandom wiki Fxxers.***
 
-***I hope to eventually release a version 2.5 with new, compliant mods.  -> This line means do NOT use the current mode. Minecraft fandom wiki Fxxkers.***
+~~***I hope to eventually release a version 2.5 with new, compliant mods.  -> This line means do NOT use the current mode. Minecraft fandom wiki Fxxkers.***~~
+
+이것은 더 이상 모드를 필요로 하지 않습니다. 2.5 버전에서는 알파버전에서 스킨을 요청할때, 닉네임.png 형식이 아닌, Player000.png 형식으로 나오는 문제를 해결했습니다.(비록 그것이 사용자가 직접 입력하는 것 이기는 하지만).
+This no longer requires a mod. In version 2.5, when requesting skins in the alpha version, the player000.png format instead of the nickname.png format was resolved (although it was entered by the user).
 
 *And in case you are wondering: 1.x, 2.0 and 2.1 were never released in the first place.*
 
