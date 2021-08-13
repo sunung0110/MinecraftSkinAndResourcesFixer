@@ -49,6 +49,11 @@ public class HTTPProxyServer implements HttpHandler {
 				requestedHost.equals("skins.minecraft.net") && requestedUrl.startsWith("/MinecraftCloaks/"))) {
 			logger.log("[HTTP Proxy] " + connectionId + "Identified request as Minecraft skin request - forwarding to Minecraft skin request handler.");
 			SkinFixer.runSkinFixer(connectionId, he, requestedHost, requestedUrl);
+		} else if(he.getRequestMethod().equals("GET") && (
+				requestedHost.equals("www.minecraft.net") && requestedUrl.startsWith("/resources/") ||
+				requestedHost.equals("s3.amazonaws.com") && requestedUrl.startsWith("/MinecraftResources/"))){
+			logger.log("[HTTP Proxy] " + connectionId + "Identified request as Minecraft resources request - forwarding to Minecraft resources request handler.");
+			SkinFixer.runSkinFixer(connectionId, he, requestedHost, requestedUrl);
 		} else if(he.getRequestMethod().equals("GET")) {
 			logger.log("[HTTP Proxy] " + connectionId + "Request does not look like a Minecraft skin request - being a really bad but at least possibly kind of working proxy server.");
 			URL url = new URL("http://" + requestedHost + requestedUrl);
