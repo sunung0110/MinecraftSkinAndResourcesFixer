@@ -1,4 +1,4 @@
-package minecraftskinfixer;
+package minecraftskinandresourcesfixer;
 
 public interface SuperSimpleLogger {
 	

@@ -1,4 +1,4 @@
-package minecraftskinfixer;
+package minecraftskinandresourcesfixer;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;

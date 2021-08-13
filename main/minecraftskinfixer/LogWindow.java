@@ -1,4 +1,4 @@
-package minecraftskinfixer;
+package minecraftskinandresourcesfixer;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
@@ -15,7 +15,7 @@ public class LogWindow extends JFrame implements SuperSimpleLogger {
 	private JScrollPane scroll;
 	
 	public LogWindow() {
-		super("Minecraft Skin Fixer " + SkinFixer2Main.VERSION);
+		super("Minecraft Skin And Resources Fixer " + SkinFixer2Main.VERSION);
 		text = new JTextArea();
 		text.setFont(new Font("Monospaced", 0, 12));
 		text.setEditable(false);

@@ -1,4 +1,4 @@
-package minecraftskinfixer;
+package minecraftskinandresourcesfixer;
 
 import java.io.IOException;
 import java.io.InputStream;
