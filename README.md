@@ -11,9 +11,9 @@ MinecraftSkinAndResourcesFixer is a simple program which allows old versions of 
 
 ---
 
-이 버전은 제가 사용하기 위해 개인용으로 개조한 버전이며, 기존 코드가 베타버전에서는 동작했으나 알파버전에서는 동작하지 않아 개조한 코드입니다. ~~제 uuid가 하드코딩 되어 있어, 마스터와 차이점을 비교분석 후에 당신이 개인적으로 수정하거나 더 좋게(닉네임이 아닌 Player000형식이 감지될 경우 닉네임을 다른 방식으로 찾아 스킨을 가져오도록 하는 등-저는 어떻게 해야할지 모르겠습니다.)개조하셔서 사용하면 됩니다.~~ 이것은 더 이상 모드를 필요로 하지 않습니다. 2.5 버전에서는 알파버전에서 스킨을 요청할때, 닉네임.png 형식이 아닌, Player000.png 형식으로 나오는 문제를 해결했습니다.(비록 그것이 사용자가 직접 입력하는 것 이기는 하지만). 이 기능은 콘솔 모드에서만 작동합니다. 이제 나의 uuid는 하드코딩 되지 않았습니다. 3.0 버전에서는 리소스(소리)가 나오지 않는 문제도 해결했습니다.
+  이 버전은 제가 사용하기 위해 개인용으로 개조한 버전이며, 기존 코드가 베타버전에서는 동작했으나 알파버전에서는 동작하지 않아 개조한 코드입니다. ~~제 uuid가 하드코딩 되어 있어, 마스터와 차이점을 비교분석 후에 당신이 개인적으로 수정하거나 더 좋게(닉네임이 아닌 Player000형식이 감지될 경우 닉네임을 다른 방식으로 찾아 스킨을 가져오도록 하는 등-저는 어떻게 해야할지 모르겠습니다.)개조하셔서 사용하면 됩니다.~~ 이것은 더 이상 모드를 필요로 하지 않습니다. 2.5 버전에서는 알파버전에서 스킨을 요청할때, 닉네임.png 형식이 아닌, Player000.png 형식으로 나오는 문제를 해결했습니다.(비록 그것이 사용자가 직접 입력하는 것 이기는 하지만). 이 기능은 콘솔 모드에서만 작동합니다. 이제 나의 uuid는 하드코딩 되지 않았습니다. 3.0 버전에서는 리소스(소리)가 나오지 않는 문제도 해결했습니다.(로그에는 버그가 있습니다. 또한 일부 버전에서 정상적으로 동작하지 않습니다.)
 
-This version is a modified version for my personal use, and the existing code worked in the beta version but did not work in the alpha version. ~~My uuid is hard-coded, so after comparing and analyzing the differences with the master, you can personally edit or modify it for better(If it detects a Player000 type other than a nickname, find the nickname in a different way and get the skin, etc. - I don't know what to do.)use.~~ This no longer requires a mod. In version 2.5, when requesting skins in the alpha version, the player000.png format instead of the nickname.png format was resolved (although it was entered by the user). This feature only works in console mode. Now my uuid is not hardcoded. In version 3.0, we also fixed an issue where the resource (sound) did not come out.
+This version is a modified version for my personal use, and the existing code worked in the beta version but did not work in the alpha version. ~~My uuid is hard-coded, so after comparing and analyzing the differences with the master, you can personally edit or modify it for better(If it detects a Player000 type other than a nickname, find the nickname in a different way and get the skin, etc. - I don't know what to do.)use.~~ This no longer requires a mod. In version 2.5, when requesting skins in the alpha version, the player000.png format instead of the nickname.png format was resolved (although it was entered by the user). This feature only works in console mode. Now my uuid is not hardcoded. In version 3.0, we also fixed an issue where the resource (sound) did not come out.(There is a bug in the log. Also, it does not work properly in some versions.)
 
 ---
 
@@ -90,9 +90,10 @@ However, if you are using a version between release 1.0 and release 1.2.5, you n
 
 ****TheNintenGuru (uuid: 3f92defab3ec4d0389d6a0abd4a6ed01) can't use this program FOREVER.****
 
-The main program has two dependencies:
+The main program has three dependencies:
 * [Non-standard JRE HTTP server](https://docs.oracle.com/javase/8/docs/jre/api/net/httpserver/spec/index.html) (included in most JREs)
 * [org.json:json:20150729](https://search.maven.org/artifact/org.json/json/20150729/jar) (included in the release jars)
+* [Apache Commons IO 2.11.0](https://commons.apache.org/proper/commons-io/download_io.cgi) (included in the release jars)
 
 To be able to use it, you need to have Java 8 or later installed on your computer.
 
