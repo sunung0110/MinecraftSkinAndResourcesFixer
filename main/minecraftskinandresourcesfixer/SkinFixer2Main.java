@@ -2,19 +2,20 @@ package minecraftskinandresourcesfixer;
 
 public class SkinFixer2Main {
 	
-	public static final String VERSION = "3.0";
+	public static final String VERSION = "3.1";
 	
 	private static SuperSimpleLogger logger;
 	
 	public static void main(String[] args) {
 		logger = new LogWindow();
 		SkinFixer.gimmeLogger(logger);
+		ResourcesFixer.gimmeLogger(logger);
 		logger.log("Welcome to Minecraft Skin And Resources Fixer " + VERSION);
 		logger.log("Made by https://github.com/DoubleNegation And editted by https://github.com/sunung0110");
 		logger.log("Source code available at https://github.com/sunung0110/MinecraftSkinAndResourcesFixer");
 		logger.log("Running on Java " + System.getProperty("java.version"));
 		logger.log("Close this window to exit.");
-		logger.log("(Build Date: 2021-08-13)");
+		logger.log("(Build Date: 2021-08-14)");
 		logger.log("----------------------------------------");
 		int overrideHttpPort = -1;
 		boolean printHelp = false;
