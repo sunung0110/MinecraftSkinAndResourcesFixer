@@ -49,6 +49,14 @@ public class HTTPProxyServer implements HttpHandler {
 		//		requestedHost.equals("s3.amazonaws.com") && requestedUrl.startsWith("/MinecraftResources/"))){
 			logger.log("[HTTP Proxy] " + connectionId + "Identified request as Minecraft resources request - forwarding to Minecraft resources request handler.");
 			ResourcesFixer.runResourcesFixer(connectionId, he, requestedHost, requestedUrl);
+		} else if (he.getRequestMethod().equals("GET") && (
+				requestedHost.equals("www.minecraft.net") && requestedUrl.startsWith("/game/"))){
+			logger.log("[HTTP Proxy] " + connectionId + "Identified request as Minecraft login request - forwarding to Minecraft login request handler.");
+			LoginFixer.runLoginFixer(connectionId, he, requestedHost, requestedUrl);
+		} else if (he.getRequestMethod().equals("GET") && (
+				requestedHost.equals("www.minecraft.net") && requestedUrl.startsWith("/listmaps.jsp"))){
+			logger.log("[HTTP Proxy] " + connectionId + "Identified request as Minecraft save request - forwarding to Minecraft save request handler.");
+			SaveFixer.runSaveFixer(connectionId, he, requestedHost, requestedUrl);
 		} else if(he.getRequestMethod().equals("GET") && (
 				requestedHost.equals("www.minecraft.net") && requestedUrl.startsWith("/skin/") ||
 				requestedHost.equals("s3.amazonaws.com") && requestedUrl.startsWith("/MinecraftSkins/") ||
