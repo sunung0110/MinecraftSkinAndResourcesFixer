@@ -2,7 +2,7 @@ package minecraftskinandresourcesfixer;
 
 public class SkinFixer2Main {
 	
-	public static final String VERSION = "4.0";
+	public static final String VERSION = "4.1";
 	
 	private static SuperSimpleLogger logger;
 	
@@ -17,7 +17,7 @@ public class SkinFixer2Main {
 		logger.log("Source code available at https://github.com/sunung0110/MinecraftSkinAndResourcesFixer");
 		logger.log("Running on Java " + System.getProperty("java.version"));
 		logger.log("Close this window to exit.");
-		logger.log("(Build Date: 2021-12-12)");
+		logger.log("(Build Date: 2023-02-04)");
 		logger.log("----------------------------------------");
 		int overrideHttpPort = -1;
 		boolean printHelp = false;

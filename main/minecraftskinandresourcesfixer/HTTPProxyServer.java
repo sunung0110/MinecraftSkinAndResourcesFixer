@@ -59,6 +59,7 @@ public class HTTPProxyServer implements HttpHandler {
 			SaveFixer.runSaveFixer(connectionId, he, requestedHost, requestedUrl);
 		} else if(he.getRequestMethod().equals("GET") && (
 				requestedHost.equals("www.minecraft.net") && requestedUrl.startsWith("/skin/") ||
+				requestedHost.equals("www.minecraft.net") && requestedUrl.startsWith("/cloak/get.jsp?user=") ||
 				requestedHost.equals("s3.amazonaws.com") && requestedUrl.startsWith("/MinecraftSkins/") ||
 				requestedHost.equals("s3.amazonaws.com") && requestedUrl.startsWith("/MinecraftCloaks/") ||
 				requestedHost.equals("skins.minecraft.net") && requestedUrl.startsWith("/MinecraftSkins/") ||

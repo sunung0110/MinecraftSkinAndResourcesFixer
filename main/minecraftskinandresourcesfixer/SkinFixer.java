@@ -108,6 +108,11 @@ public class SkinFixer {
 			}
 			autoWouldFlipBottoms = true;
 			logger.log("[Skin Fixer] " + connectionId + "Received Generation 1 request for skin of player " + username);
+		} else if(hostname.equals("www.minecraft.net") && url.startsWith("/cloak/get.jsp?user=")) {
+			username = url.substring("/cloak/get.jsp?user=".length(), url.length() - ".png".length());
+			textureType = "CAPE";
+			autoWouldFlipBottoms = true;
+			logger.log("[Skin Fixer] " + connectionId + "Received Generation 1 request for cape of player " + username);
 		} else if(hostname.equals("s3.amazonaws.com") && url.startsWith("/MinecraftSkins/")) {
 			username = url.substring("/MinecraftSkins/".length(), url.length() - ".png".length());
 			textureType = "SKIN";
