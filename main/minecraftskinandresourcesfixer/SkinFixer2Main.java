@@ -2,7 +2,7 @@ package minecraftskinandresourcesfixer;
 
 public class SkinFixer2Main {
 	
-	public static final String VERSION = "4.1";
+	public static final String VERSION = "4.2";
 	
 	private static SuperSimpleLogger logger;
 	
